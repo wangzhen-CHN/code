@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    .box {
+        height: 100%;
+        width: 100%;
+        background-color: #222;
+        overflow: hidden;
+    }
+
+    .list {
+        width: 30px;
+        height: 100%;
+        float: left;
+        color: #12e412;
+        /* color: green; */
+        white-space: normal;
+        word-break: break-all;
+        font-size: 22px;
+        letter-spacing: 10px;
+        text-align: center;
+    }
+    .list:nth-child(4n) {
+        -webkit-animation: animate3 7s linear infinite; 
+    }
+     .list:nth-child(5n) {
+        -webkit-animation: animate2 5s linear infinite; 
+    } 
+    .list:nth-child(6n) {
+        -webkit-animation: animate1 8s linear infinite; 
+    }
+     .list:nth-child(7n) {
+        -webkit-animation: animate3 5s linear infinite; 
+    }
+    .list:nth-child(0) {
+        -webkit-animation: animate 5.7s linear infinite; 
+    }
+    .list:nth-child(1) {
+        -webkit-animation: animate2 4.4s linear infinite; 
+    }
+    .list:nth-child(2) {
+        -webkit-animation: animate3 7.3s linear infinite; 
+    }
+    .list:nth-child(3) {
+        -webkit-animation: animate3 4s linear infinite; 
+    }
+    .list:nth-child(4) {
+        -webkit-animation: animate3 3.7s linear infinite; 
+    }
+    .list:nth-child(5) {
+        -webkit-animation: animate1 6s linear infinite; 
+    }
+    .list:nth-child(5) {
+        -webkit-animation: animate2 7s linear infinite; 
+    }
+    .list:nth-child(6) {
+        -webkit-animation: animate3 2s linear infinite; 
+    }
+    .list:nth-child(7) {
+        -webkit-animation: animate3 1.5s linear infinite; 
+    }
+    .list:nth-child(8) {
+        -webkit-animation: animate2 5s linear infinite; 
+    }
+    .list:nth-child(9) {
+        -webkit-animation: animate1 5s linear infinite; 
+    }
+    .list:nth-child(10) {
+        -webkit-animation: animate3 6.5s linear infinite; 
+    }
+    .list:nth-child(19) {
+        -webkit-animation: animate2 7.5s linear infinite; 
+    }
+    .list:nth-child(17) {
+        -webkit-animation: animate1 4.5s linear infinite; 
+    }
+ 
+    
+    .list:nth-child(34) {
+        -webkit-animation: animate1 2.5s linear infinite; 
+    }
+    .list:nth-child(22) {
+        -webkit-animation: animate1 4.5s linear infinite; 
+    }
+    .list:nth-child(26) {
+        -webkit-animation: animate3 4.5s linear infinite; 
+    }
+    .list:nth-child(33) {
+        -webkit-animation: animate2 4.5s linear infinite; 
+    }
+    .list:nth-child(37) {
+        -webkit-animation: animate3 5.5s linear infinite; 
+    }
+    .list:nth-child(39) {
+        -webkit-animation: animate1 7.5s linear infinite; 
+    }
+    .list:nth-child(41) {
+        -webkit-animation: animate2 4.5s linear infinite; 
+    }
+    .list:nth-child(43) {
+        -webkit-animation: animate3 7.5s linear infinite; 
+    }
+    .list:nth-child(46) {
+        -webkit-animation: animate1 2.5s linear infinite; 
+    }
+    .list:nth-child(47) {
+        -webkit-animation: animate1 4.5s linear infinite; 
+    }
+    .list:nth-child(51) {
+        -webkit-animation: animate3 6.5s linear infinite; 
+    }
+    .list:nth-child(53) {
+        -webkit-animation: animate2 3.5s linear infinite; 
+    }
+    .list:nth-child(56) {
+        -webkit-animation: animate1 1.5s linear infinite; 
+    }
+    .list:nth-child(57) {
+        -webkit-animation: animate1 6.5s linear infinite; 
+    }
+    .list:nth-child(58) {
+        -webkit-animation: animate3 2.5s linear infinite; 
+    }
+    .list:nth-child(59) {
+        -webkit-animation: animate2 6.5s linear infinite; 
+    }
+    .list:nth-child(61) {
+        -webkit-animation: animate3 2.5s linear infinite; 
+    }
+    .list:nth-child(62) {
+        -webkit-animation: animate1 4.5s linear infinite; 
+    }
+    .list:nth-child(67) {
+        -webkit-animation: animate3 2.5s linear infinite; 
+    }
+    .list:nth-child(69) {
+        -webkit-animation: animate2 5.5s linear infinite; 
+    }
+    .list:nth-child(71) {
+        -webkit-animation: animate1 4.5s linear infinite; 
+    }
+    .list:nth-child(73) {
+        -webkit-animation: animate3 2.5s linear infinite; 
+    }
+    .list:nth-child(74) {
+        -webkit-animation: animate2 8.5s linear infinite; 
+    }
+    .list:nth-child(38) {
+        -webkit-animation: animate3 4.5s linear infinite; 
+    }
+    .list:nth-child(77) {
+        -webkit-animation: animate3 6.5s linear infinite; 
+    }
+    .list:nth-child(75) {
+        -webkit-animation: animate2 2.7s linear infinite; 
+    }
+    .list:nth-child(87) {
+        -webkit-animation: animate1 2.5s linear infinite; 
+    }
+    .list:nth-child(83) {
+        -webkit-animation: animate2 2.5s linear infinite; 
+    }
+    .list:nth-child(80) {
+        -webkit-animation: animate3 5.5s linear infinite; 
+    }
+    .list:nth-child(79) {
+        -webkit-animation: animate1 5s linear infinite; 
+    }
+    .list:nth-child(95) {
+        -webkit-animation: animate2 6.7s linear infinite; 
+    }
+    .list:nth-child(11) {
+        -webkit-animation: animate2 7.7s linear infinite; 
+    }
+    .list:nth-child(13) {
+        -webkit-animation: animate1 2s linear infinite; 
+    }
+    .list:nth-child(23) {
+        -webkit-animation: animate3 7s linear infinite; 
+    }
+    .list:nth-child(25) {
+        -webkit-animation: animate1 5s linear infinite; 
+    }
+    .list:nth-child(27) {
+        -webkit-animation: animate1 4s linear infinite; 
+    }
+    .list:nth-child(31) {
+        -webkit-animation: animate1 8s linear infinite; 
+    }
+    .list:nth-child(29) {
+        -webkit-animation: animate1 7s linear infinite; 
+    }
+    @keyframes animate1 {
+        0% {
+            opacity: 1;
+            margin-top: -500px;
+          
+        }
+        50% {
+            opacity: 0;
+            margin-top: 200px;
+        }
+        100% {
+            opacity: 1;
+            margin-top: 900px;
+        }
+    }
+    @keyframes animate2 {
+        0% {
+            opacity: 0;
+            margin-top: -500px;
+          
+        }
+        50% {
+            opacity: 1;
+            margin-top: 200px;
+        }
+        100% {
+            opacity: 0;
+            margin-top: 900px;
+        }
+    }
+    @keyframes animate3 {
+        0% {
+            opacity: 0;
+            margin-top: -300px;
+          
+        }
+        50% {
+            opacity: 1;
+            margin-top: 200px;
+        }
+        100% {
+            opacity: 0;
+            margin-top: 500px;
+        }
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="list">sdfkoweritozckweij</div>
+        <div class="list">sfjkqoewplssdksdgsaklsdfko</div>
+        <div class="list">fhwerwyeyrhfhfgjx</div>
+        <div class="list">sfhfgjxchvhjkhkbhmnjkbnmsd</div>
+        <div class="list">ujxvxcraweyr</div>
+        <div class="list">ryawerweraweyruygjghjjfghh</div>
+        <div class="list">vxcvxhfjfruygghh</div>
+        <div class="list">errwttbnvbn</div>
+        <div class="list">ydfgfdfdsdfscdsgdhfscd</div>
+        <div class="list">ettyrtutydvbnvbn</div>
+        <div class="list">dfhjhghjmbnmj</div>
+        <div class="list">rtsefdsdcch</div>
+        <div class="list">dfiouioyurrrhgcjchj</div>
+        <div class="list">sfjkqsjkweij</div>
+        <div class="list">sfjkqerityugderitmx0j</div>
+        <div class="list">kqeriij0asjkwsdgsa</div>
+        <div class="list">tozcmx0kfhkwoz0</div>
+        <div class="list">sjekwozcmcmx0a0asj</div>
+        <div class="list">bcvbcweawaqwey</div>
+        <div class="list">vdfgdgserweraeray</div>
+        <div class="list">rwetsdzfaewetsay</div>
+        <div class="list">sfdwerwersdfjtgd</div>
+        <div class="list">uyiukjlotyuryerwfd</div>
+        <div class="list">rwerwekjlorwery</div>
+        <div class="list">riyugdejq</div>
+        <div class="list">lwersdfjtyuyiukfko</div>
+        <div class="list">sfjkqeozaijqo</div>
+        <div class="list">fgjxchshgiouioy</div>
+        <div class="list">shghgjrrrtcmeij</div>
+        <div class="list">sffhfgozcmx0asjkweij</div>
+        <div class="list">jxchvhjkhjkqoewpleij</div>
+        <div class="list">ssdsjkwlesktozcmx0a</div>
+        <div class="list">sfjrjkwx0asjkweij</div>
+        <div class="list">yiujxvxcsjkwe</div>
+        <div class="list">fchvhjkhsjwx0a</div>
+        <div class="list">casdayurrsdasdasjkweij</div>
+        <div class="list">rtsefdsddqjkweij</div>
+        <div class="list">rtsefdsfsd</div>
+        <div class="list">dayurywereqw</div>
+        <div class="list">dayuryfkweijfsvx</div>
+        <div class="list">sfjkqoewplssdksdgsvij</div>
+        <div class="list">plasdqwesvij</div>
+        <div class="list">hfgjxchvhsdfkowemxij</div>
+        <div class="list">jkhktozcmlkhktokl</div>
+        <div class="list">jritozcdksdksdgsadg</div>
+        <div class="list">jritozcdksdgsaklssakl</div>
+        <div class="list">vxcvxssaklchvfkowej</div>
+        <div class="list">dgsaklsdfkogdghhhfrj</div>
+        <div class="list">hfchvhjkhkbhksdgsaklsd</div>
+        <div class="list">khkbhkssdlsdfgsaklsd</div>
+        <div class="list">hfcsdgsakogsaklsd</div>
+        <div class="list">dghjkhbhksdghjsdlsdhkbh</div>
+        <div class="list">kbhkskohksdghjkhkbhkbh</div>
+        <div class="list">hfchhjkkhkbhkkbgkhk</div>
+        <div class="list">khkbhksdgsaklsaklsd</div>
+        <div class="list">skkhkbhksbhksdgk</div>
+        <div class="list">sdghjkdgsakhfckkhkksdgh</div>
+        <div class="list">bhkskohkbhksdghdchh</div>
+        <div class="list">jsdghkkhkbhkskoh</div>
+        <div class="list">kbhgsakhfchhjsddgh</div>
+        <div class="list">ghkkhkbhkskohkbj</div>
+        <div class="list">eriyugdermlssdky</div>
+        <div class="list">sakijgsakmlssdksdgs</div>
+        <div class="list">gdermlssdkyiukiyu</div>
+        <div class="list">eriyugdiukfisakijsak</div>
+        <div class="list">sfjkqoewuyiukfkowsdakij</div>
+        <div class="list">hgjsakijsdkmlsser</div>
+        <div class="list">uyiukfkowsdgsadksdgsj</div>
+        <div class="list">sfjkqoewuyiukfakij</div>
+        <div class="list">khhksdgsaklsewerzx0asjkw</div>
+        <div class="list">chvhjdfksayuryweij</div>
+        <div class="list">sjkqoewoweritoij</div>
+        <div class="list">klsdfkowerksdgsaksdfkowerj</div>
+        <div class="list">klsdfkowerksdgsaklsdfkoweritoi</div>
+        <div class="list">lsdfkoweritoiewplssdksdgsakl</div>
+
+    </div>
+</body>
+<script>
+
+</script>
+</html>

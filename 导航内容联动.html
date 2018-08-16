@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+       html,body, div,ul,li{
+            margin:0;padding:0
+        }
+       ul li{
+           list-style:none;
+       }
+        #sideBar{
+            width:50px;
+            height:500px;
+
+            position:fixed;
+            left:200px;
+            top:200px;
+
+        }
+        #sideBar ul li{
+            width:50px;
+            height:50px;
+            background:skyblue;
+            border:1px dashed #eee;
+            color:#fff;
+            text-align:center;
+            line-height:50px;
+            cursor:pointer;
+
+        }
+        #sideBar ul li.cur{
+            background:orange;
+            color:#37c1e3;
+            font-weight:bold;
+        }
+        .item{
+            width:70%;
+            height:800px;
+            background:#cccccc;
+            margin:0 auto;
+            font-size:150px;
+            color:#fff;
+            text-align: center;
+            border-bottom:1px solid #37c1e3;
+            line-height:800px;
+
+        }
+
+    </style>
+</head>
+<body>
+<div id="sideBar">
+    <ul>
+        <li>你好</li>
+        <li>明天</li>
+        <li>再见</li>
+        <li>肥肉</li>
+        <li>哈哈</li>
+    </ul>
+</div>
+<div class="content">
+    <div style="background:pink" class="item" id="div1">你好</div>
+    <div style="background:deepskyblue" class="item" id="div2">明天</div>
+    <div style="background:greenyellow" class="item" id="div3">再见</div>
+    <div style="background:green" class="item" id="div4">肥肉</div>
+    <div style="background:orange" class="item"  id="div5">哈哈</div>
+</div>
+<div style="height:1000px;" id="sest">
+
+</div>
+
+
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+    $(function(){
+
+        function SideBar(opt){
+          var self=this;
+            this.opt={
+                sidebar:'',
+                items:''
+            };
+            this.opt=opt;
+            this.proboxTop=[];//每个详细模块的偏移量
+            this.opt.sidebar.find('li').eq(0).addClass('cur');
+            $.each(self.opt.items,function(i){//循环将每个模块对应的偏移量存入数组中
+                self.proboxTop[i]=self.opt.items.eq(i).offset().top;
+            });
+
+            this.init();//执行init()函数；核心函数
+
+
+        }
+
+        SideBar.prototype={
+            init:function(){
+                this.clickTo();
+                this.scrollTo();
+
+            },
+
+            //点击跳转到某个模块
+            clickTo:function(){
+                var self=this;
+                this.opt.sidebar.find('li').finish().click(function(){
+                    var i=$(this).index();//获取点击的li对应的索引
+                   $('html,body').finish().animate({
+                       scrollTop:self.proboxTop[i]//移动到当前与当前索引相同的item上
+                   },200);
+                    //当前添加类cur其他的兄弟元素去掉cur这个类
+                    $(this).addClass('cur').siblings().removeClass('cur');
+
+
+                });
+
+            },
+            //滚动到对应位置显示高亮
+            scrollTo:function() {
+                var self = this;
+                //刷新页面时获取当前对应的高亮处的位置
+                this.change($(window).scrollTop());
+
+
+                //滑动滚动条的变化对应左侧导航栏高亮的变化
+                $(window).on('scroll',function(){
+
+                  self.change($(this).scrollTop());
+                });
+            },
+
+            //左侧高亮变化函数
+            change:function(scrollTop){
+                //第一张到倒数第二张的判断
+                    var self=this;
+                var el=self.opt.sidebar;
+                for(var i=0;i<self.proboxTop.length-1;i++){
+                    if(self.proboxTop[i]<=scrollTop&&self.proboxTop[i+1]>scrollTop){
+                       el.find('li').eq(i).addClass('cur').siblings().removeClass('cur');
+                    }
+                }
+                //最后一张的判断
+                if(self.proboxTop[self.proboxTop.length-1]<=scrollTop){
+                   el.find('li').eq(self.proboxTop.length-1).addClass('cur').siblings().removeClass('cur');
+
+                }
+            }
+
+
+        }
+
+
+        var scroll=new SideBar({
+            sidebar:$('#sideBar'),
+            items:$('.item')
+        });
+
+
+    });
+</script>
+</body>
+</html>
