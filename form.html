@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 </head>
+
+channelNo: 'PTP-EHR',                            
+ serialNum: this.uuid + i,   //流水号			 
+ businessNum: 'EHR_003',                             
+ sendType: 'base64',                             
+ picName: this.imgList[i].file.name + i,     //图片名称                             
+ picDirection: '1',     //0，到资源文件和内部文件，1，到资源文件夹2，到内部文件夹                             
+ picIoStr: this.imgList[i].file.src.substring(this.imgList[i].file.src.indexOf(',') + 1),    //base64                             uuid: this.uuid,  
+validateCode: this.codeNum,//输入的验证码
 <body>
-	<form action="https://ct.ctrip.com/m/SingleSignOn/H5SignInfo";  method="post"> 
-		AccessUserId：<input type="text" name="AccessUserId" value="obk_Spdbccc"/> <br>
-		EmployeeId：<input type="text" name="EmployeeId" value="100" /> <br>
-		AppID：<input type="text" name="AppID" value="Spdbccc" /> <br>
-		EndorsementID：<input type="text" name="EndorsementID" value="9911070705" /> <br>
-		Callback：<input type="text" name="Callback" value="http://127.0.0.1:8080/travel/9911070705"/><br>
-		Token：<input type="text" name="Token" value="5b8513a290e1d32dc410b3fb" /> <br>
-		InitPage：<input type="text" name="InitPage" value="HotelSearch" /><br>
-		Signature：<input type="text" name="Signature" value="3f9213f40a6fc94f6538a270452200a1" /> <br>
-		<button type="submit">提交</button> 
+	<div class="box"><img src="https://picload.spdbccc.com.cn/PTP/verifyCode?channelNo=PTP-WX&serialNum=4955541254121420&businessNum=EHR-003&uuid=20170928180526021" alt=""></div>
+	<h2>图片验证</h2>
+	<form action="https://picload.spdbccc.com.cn/ccws-ptpimage/checkVerifyCode " ; method="post">
+		channelNo
+		<input type="text" name="channelNo" value="PTP-WX" /> <br>
+		 uuid：
+		<input type="text" name="uuid：" value="42435667" /> <br> 
+		businessNum：
+		<input type="text" name="businessNum：" value="EHR-003" /> <br>
+		validateCode
+		<input type="text" name="validateCode" value="" /> <br>
+		
+		<button type="submit">提交</button>
 	</form>
 </body>
+
+<script>
+	// 上传图片  https://picload.spdbccc.com.cn/ccws-ptpimage/checkVerifyCode   
+	checkCode(params) {
+		 return httpPostPTP('ccws-ptpimage/checkVerifyCode', params) } 
+	//校验验证码  
+	 imgUpload(params) { 
+		 return httpPostPTP('PTP/unifiedPicConversionNew', params) }
+	 //提交保存图片
+
+</script>
+
 </html>
