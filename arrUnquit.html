@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">classBOX</div>
+    <div id="box">idBOX</div>
+</body>
+<script>
+    
+    document.getElementById('box').addEventListener('click', test2, false);             //TRUE
+    document.getElementsByClassName('box')[0].addEventListener('click', test1, false); //TRUE
+    //document.getElementsByClassName('a,box').addEventListener('click', test1, false);    //FALSE
+
+
+    function test1() {
+        alert(11)
+    }
+    function test2() {
+        alert(22)
+    }
+
+    var str='http://172.29.24.100/trvlapp/index.html?sessionKey=2c9180836579223501657922356801ea&reqOrderId=9911070827#/orderList'
+    var index1=str.indexOf('reqOrderId=');
+    var index2=str.indexOf('#');
+    var res=str.slice(index1+11,index2);
+    console.log("res:",res)
+</script>
+
+</html>
