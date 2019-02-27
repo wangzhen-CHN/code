@@ -1,0 +1,9 @@
+{
+    "data":[
+    {"userId":"iccu124","userName":"hahha","email":"111@qq.com","tel":"15322211211","role":[0]},
+    {"userId":"iccu124","userName":"hahha","email":"111@qq.com","tel":"15322211211","role":[1,2]},
+    {"userId":"iccu124","userName":"hahha","email":"111@qq.com","tel":"15322211211","role":[2]},
+    {"userId":"iccu124","userName":"hahha","email":"111@qq.com","tel":"15322211211","role":[0,1,2]},
+    {"userId":"iccu124","userName":"hahha","email":"111@qq.com","tel":"15322211211","role":[0]}
+]  
+}
