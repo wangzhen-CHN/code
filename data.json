@@ -1,0 +1,96 @@
+{
+    "users":[
+    {"userId":"iccu124","userName":"hahha","email":"111@qq.com","tel":"15322211211","role":[0]},
+    {"userId":"iccu124","userName":"hahha","email":"111@qq.com","tel":"15322211211","role":[1,2]},
+    {"userId":"iccu124","userName":"hahha","email":"111@qq.com","tel":"15322211211","role":[2]},
+    {"userId":"iccu124","userName":"hahha","email":"111@qq.com","tel":"15322211211","role":[0,1,2]},
+    {"userId":"iccu124","userName":"hahha","email":"111@qq.com","tel":"15322211211","role":[0]}
+],
+    "role":[
+    {"roleName":"超级管理员","roleDescription":"所有权限","rolePermission":["asgasd","qwerqwe","1235112","iooiorjj"]}
+],
+    "image":[
+    {"picName":"图片一","startTime":"2017-01-12 10:00:00","endTime":"2017-02-10 10:00:00","imgUrl":"https://profile.csdnimg.cn/0/B/6/1_qq_42505882","type":"all","status":0,"description":"这是一条描述"},
+    {"picName":"图片二","startTime":"2017-01-12 10:00:00","endTime":"2017-02-10 10:00:00","imgUrl":"https://avatar.csdn.net/6/9/1/3_weixin_44330260.jpg","type":"all","status":1,"description":"这是一条描述"},
+    {"picName":"图片三","startTime":"2017-01-12 10:00:00","endTime":"2017-02-10 10:00:00","imgUrl":"https://profile.csdnimg.cn/C/7/8/1_qq_40485257","type":"all","status":0,"description":"这是一条描述"},
+    {"picName":"图片四","startTime":"2017-01-12 10:00:00","endTime":"2017-02-10 10:00:00","imgUrl":"https://profile.csdnimg.cn/7/A/0/1_weixin_44681806","type":"all","status":1,"description":"这是一条描述"},
+    {"picName":"图片五","startTime":"2017-01-12 10:00:00","endTime":"2017-02-10 10:00:00","imgUrl":"https://avatar.csdn.net/2/B/3/3_qq_40147863.jpg","type":"all","status":1,"description":"这是一条描述"},
+    {"picName":"图片六","startTime":"2017-01-12 10:00:00","endTime":"2017-02-10 10:00:00","imgUrl":"https://avatar.csdn.net/3/2/3/3_u013045437.jpg","type":"all","status":1,"description":"这是一条描述"},
+    {"picName":"图片七","startTime":"2017-01-12 10:00:00","endTime":"2017-02-10 10:00:00","imgUrl":"https://profile.csdnimg.cn/A/8/1/1_madongyu1259892936","type":"all","status":0,"description":"这是一条描述"}
+    ],
+    "pointLevel":[
+    {"levelType":"积分兑换等级","levelName":"积分兑换等级一","lowerLimit":"0","upperLimit":"60000"},
+    {"levelType":"积分兑换等级","levelName":"积分兑换等级二","lowerLimit":"60001","upperLimit":"100000"},
+    {"levelType":"积分兑换等级","levelName":"积分兑换等级三","lowerLimit":"100001","upperLimit":"9999999999"}
+],
+    "voucher":[
+    {"1":"卡券批次号","2":"积分兑换等级一","3":"0","4":"60000","5":"60000","6":"60000"},
+    {"1":"卡券批次号","2":"积分兑换等级一","3":"0","4":"60000","5":"60000","6":"60000"},
+    {"1":"卡券批次号","2":"积分兑换等级一","3":"0","4":"60000","5":"60000","6":"60000"},
+    {"1":"卡券批次号","2":"积分兑换等级一","3":"0","4":"60000","5":"60000","6":"60000"},
+    {"1":"卡券批次号","2":"积分兑换等级一","3":"0","4":"60000","5":"60000","6":"60000"},
+    {"1":"卡券批次号","2":"积分兑换等级一","3":"0","4":"60000","5":"60000","6":"60000"},
+    {"1":"卡券批次号","2":"积分兑换等级一","3":"0","4":"60000","5":"60000","6":"60000"},
+    {"1":"卡券批次号","2":"积分兑换等级一","3":"0","4":"60000","5":"60000","6":"60000"}
+],
+    "coupon":[
+    {"batchNo":"201723430003a1f4e","couponCode":"ssad111","couponType":"0","couponName":"优惠券测试","faceValue":"100","startDate":1507564800000,"endDate":1507564800000,"couponStatus":"02","isWhitelist":"N","isUsed":"N","remark":"remark"},
+    {"batchNo":"201723430003a1f4e","couponCode":"ssad111","couponType":"0","couponName":"优惠券测试优惠券测试优惠券测试优惠券测试","faceValue":"100","startDate":1507564800000,"endDate":1507564800000,"couponStatus":"02","isWhitelist":"N","isUsed":"N","remark":"remark"},
+    {"batchNo":"201723430003a1f4e","couponCode":"ssad111","couponType":"0","couponName":"优惠券测试","faceValue":"100","startDate":1507564800000,"endDate":1507564800000,"couponStatus":"02","isWhitelist":"N","isUsed":"N","remark":"remark"},
+    {"batchNo":"201723430003a1f4e","couponCode":"ssad111","couponType":"0","couponName":"优惠券测试","faceValue":"100","startDate":1507564800000,"endDate":1507564800000,"couponStatus":"02","isWhitelist":"N","isUsed":"N","remark":"remark"},
+    {"batchNo":"201723430003a1f4e","couponCode":"ssad111","couponType":"0","couponName":"优惠券测试","faceValue":"100","startDate":1507564800000,"endDate":1507564800000,"couponStatus":"02","isWhitelist":"N","isUsed":"N","remark":"remark"},
+    {"batchNo":"201723430003a1f4e","couponCode":"ssad111","couponType":"0","couponName":"优惠券测试","faceValue":"100","startDate":1507564800000,"endDate":1507564800000,"couponStatus":"02","isWhitelist":"N","isUsed":"N","remark":"remark"},
+    {"batchNo":"201723430003a1f4e","couponCode":"ssad111","couponType":"0","couponName":"优惠券测试","faceValue":"100","startDate":1507564800000,"endDate":1507564800000,"couponStatus":"02","isWhitelist":"N","isUsed":"N","remark":"remark"},
+    {"batchNo":"201723430003a1f4e","couponCode":"ssad111","couponType":"0","couponName":"优惠券测试","faceValue":"100","startDate":1507564800000,"endDate":1507564800000,"couponStatus":"02","isWhitelist":"N","isUsed":"N","remark":"remark"},
+    {"batchNo":"201723430003a1f4e","couponCode":"ssad111","couponType":"0","couponName":"优惠券测试","faceValue":"100","startDate":1507564800000,"endDate":1507564800000,"couponStatus":"02","isWhitelist":"N","isUsed":"N","remark":"remark"},
+    {"batchNo":"201723430003a1f4e","couponCode":"ssad111","couponType":"0","couponName":"优惠券测试","faceValue":"100","startDate":1507564800000,"endDate":1507564800000,"couponStatus":"02","isWhitelist":"N","isUsed":"N","remark":"remark"}
+
+],
+    "period":[
+      {
+      "globalSerialNo": null,
+      "id": null,
+      "isDeleted": null,
+      "createId": null,
+      "createTime": null,
+      "updateId": null,
+      "updateTime": null,
+      "channelType": null,
+      "version": null,
+      "periodType": "666",
+      "period": null,
+      "periodUnit": null,
+      "typeName": "卡券充值"
+    },
+    {
+      "globalSerialNo": null,
+      "id": null,
+      "isDeleted": null,
+      "createId": null,
+      "createTime": null,
+      "updateId": null,
+      "updateTime": null,
+      "channelType": null,
+      "version": null,
+      "periodType": "777",
+      "period": null,
+      "periodUnit": null,
+      "typeName": "开户赠送"
+    },
+    {
+      "globalSerialNo": null,
+      "id": null,
+      "isDeleted": null,
+      "createId": null,
+      "createTime": null,
+      "updateId": null,
+      "updateTime": null,
+      "channelType": null,
+      "version": null,
+      "periodType": "888",
+      "period": null,
+      "periodUnit": null,
+      "typeName": "他人赠送"
+    }
+]
+}
