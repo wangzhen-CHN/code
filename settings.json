@@ -29,7 +29,6 @@
   "prettier.singleQuote": true,
   //  #让函数(名)和后面的括号之间加个空格
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  // #这个按用户自身习惯选择
   // #让vue中的js按编辑器自带的ts格式进行格式化
   "vetur.format.defaultFormatter.html": "js-beautify-html",
   "vetur.format.defaultFormatter.js": "vscode-typescript",
